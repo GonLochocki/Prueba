@@ -1,0 +1,146 @@
+.box {
+    height: 60px;
+    width: 100px;
+    margin: 30px 100px;
+    border-radius: 8px;
+}
+
+.box-one {
+    background-color: lightsalmon;
+}
+
+.box-two {
+    background-color: peru;
+    transition: all 0.5s;
+}
+
+.box:hover {
+    transform: scale(2);
+}
+
+/*  Circulos  */
+
+.circle1, .circle2, .circle3, .circle4, .circle5 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 12px;
+    border: solid black 1px;
+}
+
+.circle1 {
+    background-color: blue;
+    transition: all 1.5s linear;
+}
+
+.circle2 {
+    background-color: gray;
+    transition: all 1.5s ease-in; 
+    
+}
+.circle3 {
+    background-color: green;
+    transition: all 1.5s ease-out;
+}
+
+.circle4 {
+    background-color: red;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle5 {
+    background-color: tomato;
+    transition: all 1.5s ease;
+}
+
+.circle:hover .circle1,
+.circle:hover .circle2,
+.circle:hover .circle3,
+.circle:hover .circle4,
+.circle:hover .circle5{
+    transform: translateX(400px);
+}
+
+/*  Cuadraditos */
+
+.square {
+    margin: 50px;    
+}
+
+.square1 {
+    background-color: greenyellow;
+}
+
+.square2 {
+    background-color: tomato;
+    transition: all 0.5s;
+}
+
+.square1, .square2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    margin: 50px;
+    position: absolute;
+}
+
+.square2:hover {
+    transform: translate(30px, 30px);
+}
+
+/* Combinado */
+
+.combinado {
+    height: 75px;
+    width: 75px;
+    margin: 20px auto;
+    background-color: pink;
+    transition: all 2s;
+}
+
+  .combinado:hover {
+    transform: rotate(90deg) scale(1.5) translateX(140px);
+    -webkit-transform: rotate(90deg) scale(1.5) translateX(140px);
+    -o-transform: rotate(90deg) scale(1.5) translateX(140px);
+    -moz-transform: rotate(90deg) scale(1.5) translateX(140px);
+  }
+
+  /*  Animaciones */
+
+  .animacion {
+    height: 120px;
+    width: 120px;
+    margin: 100px auto;
+    background-color: cadetblue;
+  }
+
+.animacion:hover {
+    animation: cambioDeColor 4s;
+}  
+
+@keyframes cambioDeColor {
+    5%{
+        background-color: aquamarine;
+    }
+    15%{
+        background-color: burlywood;
+        border-radius: 50%;
+    }
+    25%{
+        width: 400px;
+    }
+    50%{
+        background-color: darkorange;
+    }
+    75%{
+        border-radius: 0;
+    }
+
+    100%{
+        background-color: black;
+    }
+}
+
+.div2{
+   font-size: 70px;
+}
